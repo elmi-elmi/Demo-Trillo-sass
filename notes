@@ -595,7 +595,13 @@ hover none: (for touch device): use hover:none
     flex: 0 0 300px; // shrink grow basis;
 
 
+5:
+    flex-wrap:wrap;
+    align-content: space-between,center,,,,;
 
+    when items wrap in new line you can use align content;(align cross axis)
+
+6:
 
 
 
