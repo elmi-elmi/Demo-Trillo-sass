@@ -625,7 +625,7 @@ hover none: (for touch device): use hover:none
 
 8:
 
-9:  iconmoon.io -- svg
+9:  iconmoon.io -- svg -- sprite --xlink
 
     So what is a sprite file?
 
@@ -633,7 +633,11 @@ hover none: (for touch device): use hover:none
          in this case if use sprite file, we have only one http requrest for svgs
 
 
-    10min
+    xlink:href ==> work only on webserver
+
+
+11:
+
 
 
 
