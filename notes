@@ -602,16 +602,38 @@ hover none: (for touch device): use hover:none
     when items wrap in new line you can use align content;(align cross axis)
 
 6:
-7:
-    css custom property (better than varibles in css)
+7:  css variables or css custom property -- root psudo class --   background-repeat:no-repeat;
+
+
+    css varibales or css custom property (better than varibles in sass)
 
     variables need preprocessors but custom property dont;
     you can manipulated it in javascript
     added them to dev tools
     and also cascad inherited
+    css variables define in scope (decelaration block)
+
+    :root
+    we need a block to define all thing and inherited to thier childs.
+    root like html selector with higher specificity
 
 
+    :root{
+        --color-primary: #eb2f64
 
+    }
+
+8:
+
+9:  iconmoon.io -- svg
+
+    So what is a sprite file?
+
+    Well, it's simply an SVG file which contains all of svgs
+         in this case if use sprite file, we have only one http requrest for svgs
+
+
+    10min
 
 
 
