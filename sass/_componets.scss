@@ -1,29 +1,19 @@
-.container{
-  min-height: 80vh;
-  max-width: 70vw;
-  margin: 8rem auto;
-  background-color: var(--color-Grey-light-1);
-  box-shadow: var(--shadow-dark);
+//logo
+.logo{
+  height: 3.25rem;
 }
-
-.header{
-  height: 5vh;
-  background-color:#fff;
-  border-bottom: 1px solid var(--color-Grey-light-2);
-
+//search
+.search{
+  &__input{}
+  &__button{}
+  &__icon{}
 }
-
-.content{
-  display:flex;
+//user notification
+.user-nav{
+  &__icon-box{}
+  &__icon{}
+  &__notification{}
+  &__user{}
+  &__user-photo{}
+  &__user-name{}
 }
-
-.sidebar{
-  background-color: var(--color-Grey-dark-2);
-  flex:0 0 20%;
-}
-
-.hotel-view{
-  background-color: orangered;
-  flex:1;
-}
-
