@@ -1,7 +1,7 @@
 :root {
-  --primary-color:#eb2f64;
-  --primary-color-light:#FF3366;
-  --primary-color-dark:#BA265D;
+  --primary-color: #eb2f64;
+  --primary-color-light: #FF3366;
+  --primary-color-dark: #BA265D;
   --color-Grey-light-1: #faf9f9;
   --color-Grey-light-2: #f4f2f2;
   --color-Grey-light-3: #f0eeee;
@@ -9,7 +9,7 @@
   --color-Grey-dark-1: #333;
   --color-Grey-dark-2: #777;
   --color-Grey-dark-3: #999;
-  --shadow-dark:0 2rem 4rem rgba(0,0,0,0.5);
+  --shadow-dark: 0 2rem 4rem rgba(0, 0, 0, 0.5);
 }
 
 * {
@@ -40,13 +40,56 @@ body {
 
 .logo {
   height: 3.25rem;
+  margin-left: 3.5rem;
 }
 
+.search {
+  flex: 0 0 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search__input {
+  width: 90%;
+  border: none;
+  padding: 0.7rem 2rem;
+  font-size: inherit;
+  color: inherit;
+  background-color: var(--color-Grey-light-2);
+  border-radius: 10rem;
+  transition: all 0.3s;
+}
+.search__input:focus {
+  background-color: var(--color-Grey-light-3);
+  outline: none;
+  width: 100%;
+}
+.search__input::-webkit-input-placeholder {
+  font-weight: 100;
+  color: var(--color-Grey-light-4);
+}
+.search__input:focus + .search__button {
+  background-color: var(--color-Grey-light-3);
+}
+.search__input:focus + .search__button .search__icon {
+  fill: var(--primary-color-dark);
+}
+.search__button {
+  margin-left: -3.5rem;
+  border: none;
+  background-color: var(--color-Grey-light-2);
+}
 .search__icon {
   height: 2rem;
   width: 2rem;
+  fill: var(--color-Grey-dark-3);
+  transition: all 0.4s;
 }
 
+.user-nav {
+  background-color: greenyellow;
+  display: flex;
+}
 .user-nav__icon {
   height: 2.25rem;
   width: 2.25rem;
@@ -64,6 +107,10 @@ body {
 }
 
 .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.4rem;
   height: 10vh;
   background-color: #fff;
   border-bottom: 1px solid var(--color-Grey-light-2);

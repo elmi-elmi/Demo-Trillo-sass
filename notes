@@ -636,8 +636,12 @@ hover none: (for touch device): use hover:none
     xlink:href ==> work only on webserver
 
 
-11:
+10:
+        change style in input placeholder:
 
+        ::-webkit-input-placeholder
+
+11:
 
 
 
