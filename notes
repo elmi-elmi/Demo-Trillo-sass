@@ -642,7 +642,7 @@ hover none: (for touch device): use hover:none
         ::-webkit-input-placeholder
 
 11:
-
+     & > * //select all direct child
 
 
 
