@@ -139,6 +139,24 @@ body {
   font-weight: 600;
 }
 
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.side-nav__icon {
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
+.legal {
+  font-size: 1.2rem;
+  color: var(--color-Grey-light-4);
+  text-align: center;
+  padding: 2.5rem;
+}
+
 .container {
   min-height: 80vh;
   max-width: 70vw;
@@ -152,7 +170,7 @@ body {
   justify-content: space-between;
   align-items: center;
   font-size: 1.4rem;
-  height: 10vh;
+  height: 5rem;
   background-color: #fff;
   border-bottom: 1px solid var(--color-Grey-light-2);
 }
@@ -163,11 +181,12 @@ body {
 
 .sidebar {
   background-color: var(--color-Grey-dark-2);
-  flex: 0 0 20%;
+  flex: 0 0 18%;
 }
 
 .hotel-view {
-  background-color: orangered;
+  background-color: #fff;
+  height: 80rem;
   flex: 1;
 }
 
