@@ -105,7 +105,7 @@
         $color-secondary:..;
         $color-tertiary:...;
         $color-text-dark:...;
-        $width-button 150px
+        $width-button: 150px
 
     & operator
 
@@ -646,6 +646,8 @@ hover none: (for touch device): use hover:none
 12:
 13:
     currentColor
-
+    active
+    z-index works on specified position
+    transform-origin
 
 
