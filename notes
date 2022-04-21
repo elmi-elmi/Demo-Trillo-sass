@@ -650,4 +650,19 @@ hover none: (for touch device): use hover:none
     z-index works on specified position
     transform-origin
 
+16:
+
+    flex-wrap
+    mask-image
+    mask-size
+
+    last-of-type (last-child)
+
+    use svg as image and change its color
+
+
+    use -webkit- for chrome:
+
+        mask-image:url('.....sv')
+        mask-size:cover
 
