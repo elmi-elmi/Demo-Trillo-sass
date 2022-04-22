@@ -650,7 +650,7 @@ hover none: (for touch device): use hover:none
     z-index works on specified position
     transform-origin
 
-16:
+16:17:
 
     flex-wrap
     mask-image
@@ -666,3 +666,19 @@ hover none: (for touch device): use hover:none
         mask-image:url('.....sv')
         mask-size:cover
 
+
+      &__item::before{
+    content:'';
+    display: inline-block;
+    margin-right: 0.7rem;
+    height:1rem;
+    width:1rem;
+    background-color: var(--primary-color);
+    -webkit-mask-image: url(../img/chevron-thin-right.svg);
+    -webkit-mask-size:cover;
+    mask-image: url(../img/chevron-thin-right.svg);
+    mask-size:cover;
+  }
+
+
+18:
