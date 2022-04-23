@@ -231,6 +231,10 @@ body {
   width: 1.75rem;
   fill: var(--primary-color-dark);
 }
+.overview__btn:hover {
+  margin-left: 4px;
+  transform: translateY(-1px);
+}
 .overview__location {
   display: flex;
   flex-direction: row-reverse;
@@ -410,6 +414,63 @@ body {
   z-index: 9;
 }
 
+.cta {
+  padding: 3.5rem 0;
+  text-align: center;
+}
+.cta__book-now {
+  font-size: 2rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 2.5rem;
+}
+
+.btn {
+  font-size: 1.4rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  border-radius: 100px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  background-image: linear-gradient(to right, var(--primary-color-light), var(--primary-color-dark));
+  position: relative;
+  overflow: hidden;
+}
+.btn__invisible {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: -100%;
+  transition: all 0.2s;
+  height: 100%;
+  width: 100%;
+  padding: 2rem 0;
+}
+.btn__visible {
+  display: inline-block;
+  transition: all 0.2s;
+  height: 100%;
+  width: 100%;
+  padding: 2.5rem 7rem;
+}
+.btn:hover {
+  background-image: linear-gradient(to left, var(--primary-color-light), var(--primary-color-dark));
+}
+.btn:hover .btn__invisible {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.btn:hover .btn__visible {
+  transform: translateY(100%);
+}
+.btn:focus {
+  outline: none;
+  animation: pulsat 1s infinite;
+}
+
 .container {
   min-height: 80vh;
   max-width: 70vw;
@@ -446,14 +507,15 @@ body {
 }
 
 .detail {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   display: flex;
   background-color: var(--color-Grey-light-1);
   padding: 4.5rem;
+  border-bottom: var(--line);
 }
 
 .description {
-  flex: 0 1 60%;
+  flex: 0 0 60%;
   background-color: #fff;
   padding: 3rem;
   box-shadow: var(--shadow-light);

@@ -35,14 +35,15 @@
 }
 
 .detail{
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   display:flex;
   background-color: var(--color-Grey-light-1);
-  padding:4.5rem
+  padding:4.5rem;
+  border-bottom: var(--line);
 
 }
 .description{
-  flex: 0 1 60%;
+  flex: 0 0 60%;
   background-color: #fff;
   padding:3rem;
 
