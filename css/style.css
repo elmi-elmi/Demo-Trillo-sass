@@ -57,6 +57,12 @@ body {
   justify-content: center;
   align-items: center;
 }
+@media only screen and (max-width: 31.25em) {
+  .search {
+    order: 1;
+    flex: 0 0 100%;
+  }
+}
 .search__input {
   width: 90%;
   border: none;
@@ -183,6 +189,12 @@ body {
     justify-content: center;
   }
 }
+@media only screen and (max-width: 37.5em) {
+  .side-nav__link:link, .side-nav__link:visited {
+    flex-direction: column;
+    padding: 1rem;
+  }
+}
 .side-nav__link::before {
   position: absolute;
   z-index: -1;
@@ -207,6 +219,14 @@ body {
   height: 1.75rem;
   margin-right: 2rem;
   fill: currentColor;
+}
+@media only screen and (max-width: 37.5em) {
+  .side-nav__icon {
+    margin-right: 0;
+    margin-bottom: 0.7rem;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
 }
 
 .legal {
@@ -239,6 +259,12 @@ body {
   padding: 1.5rem 3rem;
   text-transform: uppercase;
   letter-spacing: 1px;
+}
+@media only screen and (max-width: 37.5em) {
+  .overview__heading {
+    font-size: 1.8rem;
+    padding: 1.25rem 2rem;
+  }
 }
 .overview__stars {
   display: flex;
@@ -282,7 +308,6 @@ body {
 .overview__rating {
   display: flex;
   color: white;
-  font-weight: bold;
   padding: 0.4rem;
   flex-direction: column;
   justify-content: center;
@@ -291,11 +316,28 @@ body {
   align-self: stretch;
   margin-left: 3rem;
 }
+@media only screen and (max-width: 37.5em) {
+  .overview__rating {
+    padding: 0 1.5rem;
+  }
+}
 .overview__rating-average {
   font-size: 2.25rem;
+  font-weight: bold;
+  margin-bottom: -3px;
+}
+@media only screen and (max-width: 37.5em) {
+  .overview__rating-average {
+    font-size: 1.8rem;
+  }
 }
 .overview__rating-count {
   font-size: 1rem;
+}
+@media only screen and (max-width: 37.5em) {
+  .overview__rating-count {
+    font-size: 0.7rem;
+  }
 }
 
 .btn-inline {
@@ -533,6 +575,13 @@ body {
   background-color: #fff;
   border-bottom: var(--line);
 }
+@media only screen and (max-width: 31.25em) {
+  .header {
+    flex-wrap: wrap;
+    height: 12rem;
+    align-content: space-around;
+  }
+}
 
 .content {
   display: flex;
@@ -568,6 +617,11 @@ body {
     padding: 3rem;
   }
 }
+@media only screen and (max-width: 37.5em) {
+  .detail {
+    flex-direction: column;
+  }
+}
 
 .description {
   flex: 0 0 60%;
@@ -580,6 +634,12 @@ body {
   .description {
     padding: 2rem;
     margin-right: 3rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .description {
+    margin-right: 0;
+    margin-bottom: 4rem;
   }
 }
 
