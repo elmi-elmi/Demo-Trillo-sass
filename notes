@@ -688,3 +688,5 @@ hover none: (for touch device): use hover:none
 
 19:
 20:
+    Writing media query
+
